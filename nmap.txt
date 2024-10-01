@@ -1,0 +1,32 @@
+C:\Users\Hp>nmap -sS -p- 192.168.1.100
+Starting Nmap 7.95 ( https://nmap.org ) at 2024-10-01 21:10 India Standard Time
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-04-27 10:00 UTC
+Nmap scan report for 192.168.1.100
+Host is up (0.0020s latency).
+Not shown: 65530 closed ports
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+443/tcp   open  https
+3306/tcp  open  mysql
+
+Nmap done: 1 IP address (1 host up) scanned in 30.45 seconds
+// for the unusal IP tracking 
+C:\Users\Hp>nmap -sS -p- 192.168.1.ed
+--- Security Alert ---
+Timestamp: 2024-04-27 10:30 UTC
+Source IP: 192.168.1.100
+Threat Level: High
+Description:
+An nmap SYN scan was detected targeting all TCP ports (65535 ports) on the host 192.168.1.100. This behavior is indicative of a reconnaissance attempt to identify open services and potential vulnerabilities.
+
+Automated Actions Taken:
+1. Blocked IP address 192.168.1.100 at the firewall.
+2. Isolated the affected host for further analysis.
+3. Generated a detailed report for the security team.
+
+Recommended Actions:
+- Conduct a thorough investigation of the affected host.
+- Review firewall rules and update as necessary.
+- Monitor network traffic for any further suspicious activities.
+-------------------------
